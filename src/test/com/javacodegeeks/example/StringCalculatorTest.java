@@ -8,7 +8,7 @@ import static org.junit.Assert.*;
 
 public class StringCalculatorTest {
 
-    StringCalculator calculator;
+    private StringCalculator calculator;
 
     @Before
     public void init() {

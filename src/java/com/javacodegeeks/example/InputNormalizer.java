@@ -13,7 +13,7 @@ public class InputNormalizer {
 
     private String getDelimiters(String numbers, String defaultDelimiters) {
         StringBuilder delimiters = new StringBuilder(defaultDelimiters);
-        while(numbers.indexOf("]") >= 0){
+        while(numbers.contains("]")){
             delimiters.append("|");
             String delimiter = numbers.substring(numbers.indexOf("[") + 1, numbers.indexOf("]"));
             for(char delimiterChar: delimiter.toCharArray()) {
