@@ -1,8 +1,8 @@
 package com.javacodegeeks.example;
 
-public class InputValidator {
+class InputValidator {
 
-    public static void validate(String[] numbers) throws RuntimeException {
+    static void validate(String[] numbers) throws RuntimeException {
         StringBuilder negativeNumbers = new StringBuilder();
         for(String number:numbers) {
             int numInt = Integer.parseInt(number);

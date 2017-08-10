@@ -1,8 +1,8 @@
 package com.javacodegeeks.example;
 
-public class InputNormalizer {
+class InputNormalizer {
 
-    public String[] normalize(String input) {
+    String[] normalize(String input) {
         String delimiters = "\n|,";
         if (input.contains("//")) {
             delimiters = getDelimiters(input, delimiters);

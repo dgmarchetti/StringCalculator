@@ -1,7 +1,7 @@
 package com.javacodegeeks.example;
 
-public class StringCalculator {
-    public int add(String input) {
+class StringCalculator {
+    int add(String input) {
         int output = 0;
         String[] numbers = new InputNormalizer().normalize(input);
         InputValidator.validate(numbers);
